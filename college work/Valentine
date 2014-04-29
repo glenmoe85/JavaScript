@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">  
+  <head>
+    <!-- Very simple menu. Loads fast. Little graphic. 
+         Support keyboard accelerators. Not particularly cool visually -->
+    <title>Valentine</title>
+
+    <!-- keep your CSS simple and in-line (no external CSS) -->
+    <style type="text/css"> 
+      body {background:#FF99FF; color: #330000; margin:0px; padding:0px; }
+      a {text-decoration:none}
+      .top  { background: #000099; margin: 0px; padding: 0px}
+      .footer  { background: #ff66ff; 
+                 border-top: #996699 solid 1px; 
+                 border-bottom: #996699 solid 1px;
+                 margin: 0 0 0 0; }
+      hr       { border:solid; border-width:1px; border-color:#336666;}
+    </style>
+  </head>
+  <body> 
+   <!-- Logos do not help usability. Just one at the entry page -->
+   <div class="top">
+      <img src="heart.gif" width="120" height="40" alt="Valentine's Day" />
+   </div>
+   
+   <ol>
+     <li><a href="menu1.xhtml" accesskey="1">Love words</a></li>
+     <li><a href="menu2.xhtml" accesskey="2">Gift ideas</a></li>
+     <li><a href="menu3.xhtml" accesskey="3">Love whispers</a></li>
+     <li><a href="rich_list.xhtml" accesskey="4">For ever...or?</a></li>
+   </ol>
+   
+   <p> 
+    <a href="#"><img src="roses.jpg" width="110" height="40" alt="Buy Flowers"/></a>
+   </p> 
+   <div class="footer">
+   <a href="index.xhtml">Home</a>
+   <hr style="border-color:#993333;" />
+     Copyright &copy; 2002-2006, Luca Passani
+   </div>
+   
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<head>
+    <!-- Very simple menu. Loads fast. Little graphic. 
+         Support keyboard accelerators. Not particularly cool visually -->
+    <title>Valentine</title>
+
+    <!-- keep your CSS simple and in-line (no external CSS) -->
+    <style type="text/css"> 
+      body {background:#FF99FF; color: #330000; margin:0px; padding:0px; }
+      a {text-decoration:none}
+      .top  { background: #000099; margin: 0px; padding: 0px}
+      .footer  { background: #ff66ff; 
+                 border-top: #996699 solid 1px; 
+                 border-bottom: #996699 solid 1px;
+                 margin: 0 0 0 0; }
+      hr       { border:solid; border-width:1px; border-color:#336666;}
+    </style>
+
+<script type ="text/javascript">
+<![CDATA[
+<!-- Original:  Russ Swift (rswift220@yahoo.com) -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+function validatePwd() 
+{
+var invalid = " "; // Invalid character is a space
+var minLength = 6; // Minimum length
+var pw1 = document.myForm.password.value;
+var pw2 = document.myForm.password2.value;
+// check for a value in both fields.
+if (pw1 == '' || pw2 == '') {
+alert('Please enter your password twice.');
+return false;
+}
+
+else {
+if (pw1 != pw2) {
+alert ("You did not enter the same new password twice. Please re-enter your password.");
+return false;
+}
+else {
+alert('Nice job.');
+return true;
+      }
+   }
+}
+//  End -->
+]]>
+</script>
+</head>
+
+
+<body>
+
+
+	<form name="myForm" onSubmit="return validatePwd()">
+	Enter your password twice.
+
+	(At least 6 characters, 12 characters max, and spaces are not allowed.)
+
+<p><label accesskey="u">Password: <input type="password" name="password"/></label></p>
+<p><label accesskey="p">Password2: <input type="password" name="password2"/></label></p>
+	<input type="submit" value="Submit">
+	
+
+</input>
+</form>
+</body>
+</html>
+

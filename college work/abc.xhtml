@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<noparse>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+	<title>Login</title>
+	<script type ="text/javascript">//<![CDATA[
+		function validatePwd()
+		{
+			var username = document.getElementById("username").value;
+			var pw = document.getElementById("password").value;
+			var username1 ="admin"
+			var pass = "admin12"
+			if ((username==username1)&&(pw ==pass))
+			{
+				alert("Success");
+				document.location="cc_details.xhtml";
+	
+				return false;
+			}
+			alert("failed");
+			return true;
+		}
+		alert("5");
+		//]]>
+	</script>
+
+	<style type="text/css">
+		body {background:#FFF; color: #330000; margin:0px; padding:0px; }
+		a {text-decoration:none}
+		.top { background: #000099; margin: 0px; padding: 0px}
+		.footer { background: #ff66ff;
+		border-top: #996699 solid 1px;
+		border-bottom: #996699 solid 1px;
+		margin: 0 0 0 0; }
+		hr { border:solid; border-width:1px; border-color:#336666;}
+	</style>
+	
+	</head>
+
+	<body>
+		<form id="myform" onsubmit="return validatePwd()">
+		<h1>enter your username and password</h1>
+		<p><label accesskey="u">Username: <input type="text" id="username"/></label></p>
+		<p><label accesskey="p">Password: <input type="password" id="password"/></label></p>
+		<input type="submit" value="submit" />
+		<input type="button" value="test" onclick="validatePwd()" />
+		
+	</form>
+	
+	</body>
+</html>
+</noparse>

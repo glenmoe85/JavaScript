@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!-- Very simple menu. Loads fast. Little graphic.
+Support keyboard accelerators. Not particularly cool visually -->
+<title>Valentine</title>
+
+<!-- keep your CSS simple and in-line (no external CSS) -->
+<style type="text/css">
+body {background:#FF99FF; color: #330000; margin:0px; padding:0px; }
+a {text-decoration:none}
+.top { background: #000099; margin: 0px; padding: 0px}
+.footer { background: #ff66ff;
+border-top: #996699 solid 1px;
+border-bottom: #996699 solid 1px;
+margin: 0 0 0 0; }
+hr { border:solid; border-width:1px; border-color:#336666;}
+</style>
+
+<script language="javascript">
+
+function validatePwd()
+{
+var invalid = " "; // Invalid character is a space
+var minLength = 6; // Minimum length
+var pw1 = document.getElementById("password").value;
+var pw2 = document.getElementById("password2").value;
+// check for a value in both fields.
+if (pw1 == '' || pw2 == '') {
+alert('Please enter your password twice.');
+return false;
+}
+// check for minimum length
+if (document.getElementById("password").value.length < minLength) {
+alert('Your password must be at least ' + minLength + ' characters long. Try again.');
+return false;
+}
+// check for spaces
+if (document.getElementById("password").value.indexOf(invalid) > -1) {
+alert("Sorry, spaces are not allowed.");
+return false;
+}
+else {
+if (pw1 != pw2) {
+alert ("You did not enter the same new password twice. Please re-enter your password.");
+return false;
+}
+else {
+alert('Nice job.');
+return true;
+}
+}
+}
+
+</script>
+</head>
+
+
+<body>
+
+<center>
+<form id=myForm onSubmit="return validatePwd()" method="post">
+Enter your password twice.
+<br>
+(At least 6 characters, 12 characters max, and spaces are not allowed.)
+<p>
+Password: <input type="password" name="password" id="password" maxlength=12>
+<br>
+Verify password: <input type="password" name="password2" id="password2" maxlength=12>
+<p>
+<input type=submit value="Submit">
+</form>
+</center>
+
+<p><center>
+<font face="arial, helvetica" size"-2">Free JavaScripts provided<br>
+by <a href="http://javascriptsource.com">The JavaScript Source</a></font>
+</center></body></html>

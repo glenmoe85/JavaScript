@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<head>
+    <!-- Very simple menu. Loads fast. Little graphic. 
+         Support keyboard accelerators. Not particularly cool visually -->
+    <title>Valentine</title>
+
+    <!-- keep your CSS simple and in-line (no external CSS) -->
+    <style type="text/css"> 
+      body {background:#FF99FF; color: #330000; margin:0px; padding:0px; }
+      a {text-decoration:none}
+      .top  { background: #000099; margin: 0px; padding: 0px}
+      .footer  { background: #ff66ff; 
+                 border-top: #996699 solid 1px; 
+                 border-bottom: #996699 solid 1px;
+                 margin: 0 0 0 0; }
+      hr       { border:solid; border-width:1px; border-color:#336666;}
+    </style>
+  </head>
+    <title>Main Page</title>
+  
+
+<!--
+anchors can be to a target within document or to an external URL
+-->
+
+  <body>
+<!-- Logos do not help usability. Just one at the entry page -->
+   <div class="top">
+      <img src="phone.jpg" width="60" height="80" alt="Valentine's Day" />
+   </div>
+  	<hr/>
+    <p><a id="top">Welcome to Top-up Zone</a></p>
+    <ol>
+      <li><a href="Login.xhtml">Login</a></li>
+      <li><a href="Register.xhtml">Register an Account</a></li>
+      <li>Contact us</li>
+    </ol>
+    <hr/>
+    <p><a href="#top">Back to top</a></p> <!--to target in same document-->
+  </body>
+</html>
